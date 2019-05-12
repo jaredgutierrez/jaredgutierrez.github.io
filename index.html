@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- 	<title>Complete Bootstrap 4 Website Layout</title>
+ -->	
+ 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	<link href="style.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- Navigation -->
+<!-- Navigation -->
+<nav class = "navbar navbar-expand-md navbar-light bg-light sticky-top">
+	<!-- takes up 100% of the screen-->
+	<div class="container-fluid">
+		<a class="navbar-brand" href="#">
+			<h1>Welcome!</h1>
+		</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+		<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="navbarResponsive">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item active">
+					<a class="nav-link" i="hi" href="#">HOME</a>
+
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">ABOUT ME</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">EXPERIENCE</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">HOBBIES</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">CONTACT</a>
+				</li>
+			</ul>
+<!-- 			<script>
+			$("button").click(function() {
+			    $('html,body').animate({
+			        scrollTop: $(".welcome").offset().top},
+			        'slow');
+			});
+			</script> -->
+
+		</div>
+	</div>
+</nav>
+
+<!--- Image Slider -->
+<div id="slides" class="carousel slide" data-ride="carousel">
+	<ul class="carousel-indicators">
+		<li data-target="#slides" data-slide-to="0" class="active"></li>
+		<li data-target="#slides" data-slide-to="1"></li>
+		<li data-target="#slides" data-slide-to="2"></li>
+
+	</ul>
+	<div class="carousel-inner">
+		<div class="carousel-item active">
+			<img src="img/jared2.jpg">
+			<div class="carousel-caption">
+				<h1 class="display-2">Jared Gutierrez</h1>
+
+			</div>
+			<div class="carousel-caption2">
+				<h3>Software Engineer</h3>
+				<h3>•</h3>
+				<h3>UC Berkeley Alumni</h3>
+				<h3>•</h3>
+				<h3>San Francisco - Bay Area</h3>
+			</div>
+		</div>
+		<div class="carousel-item">
+			<img src="img/jared1.jpg">
+		</div>
+		<div class="carousel-item">
+			<img src="img/jared3.jpg">
+		</div>
+
+	</div>
+</div>
+
+
+
+
+<!--- Welcome Section -->
+<div class="container-fluid padding">
+	<div class="row welcome text-center">
+		<div class="col-12">
+			<h1 class="display-4">A LITTLE ABOUT ME...</h1>
+		</div>
+		<hr>
+		<div class="col-12">
+			<p class="lead">I am a recent Alumni from the University of California, Berkeley where I earned a Bachelor of Arts in Computer Science. I was born and raised in the San Francisco/Bay Area where I developed a passion for technology/design and hope to use what I have learned to benefit those in my community. I am currently working as a Software Engineer at Airbnb in SF. Outside of work I am a Hip-Hop choreographer, Breakdancer, Guitarist, and Tae Kwon Do Martial Artist. I also have strong interests in traveling, fashion, and music and love to talk to others to share experiences.</p>
+		</div>
+	</div>
+	<hr class="my-4">
+
+</div>
+
+
+
+
+<!--- Two Column Section -->
+	<div class="row welcome text-center">
+		<div class="col-12 text-center">
+			<h1 class="display-4">PROFESSIONAL EXPERIENCE</h1>
+		</div>
+		<hr>
+	</div>
+
+
+
+<div class = "two-columns">
+<div class="container-fluid padding">
+
+<div class="row padding">
+
+	<div class="col-lg-7">
+		<h2>AIRBNB</h2>
+		<p>Software Engineering Intern - Payments Team</p>
+		<p>(Returning For Full-time)</p>
+
+		<p>May 2018 - August 2019</p>
+
+		<p>• Pioneered the development of a Tax Engine that processes transient occupancy tax (TOT) calculations from booking requests and is customizable to abide by tax laws in various jurisdictions </p>
+		<p>• Deployed this engine into production enabling Airbnb to calculate TOT for Taiwanese listings saving the company $6 Million in tax expenses per year
+		<p>• Reduced computation time for tax quotes by 97% ( 400ms to 15ms ) </p>
+
+		<p>• Placed 1st in the company-wide hackathon with a web application that enables employees to organize, track, and log social activities while maintaining an office-wide leaderboard</p> 
+
+		<p>• Developed a XML file parser that verifies the format of preprocessed data and batch populates databases with jurisdiction and TOT data</p>
+		<br>
+<!-- 		<a href="#" class="btn btn-primary">Learn More</a>
+ -->	</div>
+		<div class="col-lg-5">
+			<img src="img/airbnblogo.png" class="img-fluid">
+		</div>
+	</div>
+</div>
+<div class="row padding">
+	<div class="col-lg-5">
+		<img src="img/gyantlogo.png" class="img-fluid">
+	</div>
+	<div class="col-lg-7">
+		<h2>GYANT</h2>
+		<p>Technical Product Management Intern</p>
+		<p>October 2018 - Present</p>
+
+		<p>• Work directly alongside the CTO to develop the platform's FrontDoor product that allows users to obtain contact information for specialized physicians in their vicinity </p>
+		<p> • Leading the development of a Web Parsing extension to keep the physician info updated and accurate from web sites based on the user's location </p>
+		<p>• Responsible for research regarding competitor platforms and User Experience enhancements</p>
+		<br>
+<!-- 		<a href="#" class="btn btn-primary">Learn More</a>
+ -->	</div>
+</div>
+<div class="row padding">
+
+	<div class="col-lg-7">
+		<h2>NVIDIA</h2>
+		<p>Software Engineering Intern</p>
+		<p>May 2017 - August 2017</p>
+
+		<p>• Developed an automated command line tool that parses DMP files from recently modified bugs and generates data visualizations highlighting trends in crash data</p>
+		<p>• Helped developers isolate, reproduce, and/or fix underlying bugs by showing patterns found in computer crash files, ultimately streamlining the debugging process for software engineers</p>
+		<p>• Deployed this tool for company wide use and automated it through Jenkins</p>
+		<p>• Implemented attachment download capabilities for NVIDIA's analytics and visualization platform</p>
+		<br>
+<!-- 		<a href="#" class="btn btn-primary">Learn More</a>
+ -->	</div>
+	<div class="col-lg-5">
+		<img src="img/nvidialogo.jpg" class="img-fluid">
+	</div>
+</div>
+<div class="row padding">
+	<div class="col-lg-5">
+		<img src="img/aptitudesoftwarelogo.png" class="img-fluid">
+	</div>
+	<div class="col-lg-7">
+		<h2>APTITUDE SOFTWARE</h2>
+		<p>Software Engineering Intern</p>
+		<p>July 2016 - August 2016</p>
+
+		<p>• Designed the user-interface for the upcoming updated release of the company’s website and created user data charts corresponding to SQL tables</p>
+		<p>• Implemented modal windows to display documents and editing pages to replace hyper linking</p>
+		<p>• Outlined new and updated features back-end developers are to add and improve on for the next release</p>
+		<p>• Set up UI enhancements and new features (Copy, Parent/Child Structures, Inline Help, Uploads)</p>
+		<p>• Located bugs in the Ruby program and documented corresponding user error/help messages</p>
+		<br>
+<!-- 		<a href="#" class="btn btn-primary">Learn More</a>
+ -->	</div>
+</div>
+<div class="row padding">
+
+	<div class="col-lg-7">
+		<h2>ALFRESCO SOFTWARE</h2>
+		<p>Data Operations Intern</p>
+		<p>May 2016 - August 2016</p>
+
+		<p>• Revised and maintained accuracy of data from over 9,000 consumer accounts from the East Coast, Central America, Canada, and Europe</p>
+		<p>• Collaborated with the sales development team and account executives to streamline the sale of the Alfresco One's flagship software product.</p>
+		<p>• Reviewed company accounts within the Salesforce database for accuracy and synced them with their information from data.com</p>
+		<br>
+<!-- 		<a href="#" class="btn btn-primary">Learn More</a>
+ -->	</div>
+	<div class="col-lg-5">
+		<img src="img/alfrescologo.jpg" class="img-fluid">
+	</div>
+</div>
+</div>
+<hr class="my-4">
+</div>
+
+
+<!--- Meet the team -->
+<div class="container-fluid padding">
+	<div class="row welcome text-center">
+		<div class="col-12">
+			<h1 class="display-4">Languages</h1>
+		</div>
+		<hr>
+	</div>
+</div>
+
+<div class="container-fluid padding">
+	<div class="row text-center padding">
+		<div class="col-xs-12 col-sm-4 col-md-2">
+			 <i class="fas fa-code"></i>
+			 <h3>HTML5</h3>
+		</div>
+  		 <div class="col-sm-12 col-sm-4 col-md-2">
+			<i class="fab fa-js"></i>
+			 <h3>JavaScript</h3>
+ 		</div>
+
+		<div class="col-sm-12 col-sm-4 col-md-2">
+			 <i class="fab fa-css3"></i>
+			 <h3>CSS3</h3>
+		</div>
+		<div class="col-sm-12 col-sm-4 col-md-2">
+			 <i class="fab fa-python"></i>
+			 <h3>Python</h3>
+ 		</div>
+ 		<div class="col-sm-12 col-sm-4 col-md-2">
+			<i class="fas fa-coffee"></i>
+			 <h3>Java</h3>
+ 		</div>
+ 		 <div class="col-sm-12 col-sm-4 col-md-2">
+			<i class="fab fa-cuttlefish"></i>
+			 <h3>C</h3>
+ 		</div>
+	</div>
+	<div class="row text-center padding">
+		<div class="col-xs-12 col-sm-4 col-md-2">
+			<i class="fas fa-terminal"></i>
+			 <h3>Go</h3>
+		</div>
+		<div class="col-xs-12 col-sm-4 col-md-2">
+			 <i class="fas fa-bold"></i>
+			 <h3>BOOTSTRAP</h3>
+		</div>
+		<div class="col-sm-12 col-sm-4 col-md-2">
+			<i class="fas fa-sitemap"></i>			 
+			<h3>SQL</h3>
+		</div>
+		<div class="col-sm-12 col-sm-4 col-md-2">
+			<i class="fas fa-code-branch"></i>
+			 <h3>Swift</h3>
+ 		</div>
+ 		<div class="col-sm-12 col-sm-4 col-md-2">
+			<i class="fas fa-server"></i>
+			 <h3>R</h3>
+ 		</div>
+ 		<div class="col-sm-12 col-sm-4 col-md-2">
+			<i class="fab fa-free-code-camp"></i>
+			 <h3>Git</h3>
+ 		</div>
+	</div>
+	<hr class="my-4">
+</div>
+
+<!--- Coursework -->
+<div class="container-fluid padding">
+	<div class="row welcome text-center">
+		<div class="col-12">
+			<h1 class="display-4">Education</h1>
+		</div>
+		<hr>
+	</div>
+</div>
+
+<div class = "two-columns2" >
+<div class="container-fluid padding">
+<div class="row padding">
+	<div class="">
+		<img src="img/berkeley.png" class="img-fluid">
+	</div>
+	<div class="col-lg-9" style="padding-left: 100px;">
+		<h2>University of California, Berkeley</h2>
+		<h3>B.A. Computer Science</h3>
+		<h5>August 2015 - May 2019</h5>
+	</div>
+</div>
+</div>
+</div>
+
+
+<!--- Coursework -->
+<div class="container-fluid padding">
+	<div class="row welcome text-center">
+		<div class="col-12">
+			<h1 class="display-4">Coursework</h1>
+		</div>
+		<hr>
+	</div>
+</div>
+
+<div class="container-fluid padding">
+	<div class="row text-center padding">
+		<div class="col-xs-12 col-sm-4 col-md-2">
+			 <h3>Computer Security</h3>
+		</div>
+  		 <div class="col-sm-12 col-sm-4 col-md-2">
+			 <h3>Data Structures</h3>
+ 		</div>
+
+		<div class="col-sm-12 col-sm-4 col-md-2">
+			 <h3>Operating Systems</h3>
+		</div>
+		<div class="col-sm-12 col-sm-4 col-md-2">
+			 <h3>Structure and Interpretation of Programming</h3>
+ 		</div>
+ 		<div class="col-sm-12 col-sm-4 col-md-2">
+			 <h3>Web Design</h3>
+ 		</div>
+ 		 <div class="col-sm-12 col-sm-4 col-md-2">
+			 <h3>Machine Structures</h3>
+ 		</div>
+	</div>
+	<div class="row text-center padding">
+		<div class="col-xs-12 col-sm-4 col-md-2">
+			 <h3>Database Systems</h3>
+		</div>
+		<div class="col-xs-12 col-sm-4 col-md-2">
+			 <h3>Efficient Algorithms and Intractable Problems</h3>
+		</div>
+		<div class="col-sm-12 col-sm-4 col-md-2">
+			<h3>Principles and Techniques of Data Science</h3>
+		</div>
+		<div class="col-sm-12 col-sm-4 col-md-2">
+			 <h3>Technology Entrepreneurship</h3>
+ 		</div>
+ 		<div class="col-sm-12 col-sm-4 col-md-2">
+			 <h3>Linear Algebra and Differential Equations</h3>
+ 		</div>
+ 		<div class="col-sm-12 col-sm-4 col-md-2">
+			 <h3>Designing Information Devices and Systems</h3>
+ 		</div>
+	</div>
+	<hr class="my-4">
+</div>
+
+
+
+
+
+<div class="container-fluid padding">
+	<div class="row welcome text-center">
+		<div class="col-12">
+			<h1 class="display-4">University Involvement</h1>
+		</div>
+		<hr>
+	</div>
+</div>
+
+<!--- Cards -->
+<div class="container-fluid padding">
+
+	<div class="row padding">
+		<div class="col-md-2">
+			<div class="card">
+ 				<img class="card-img-top card-pic" src="img/idx.jpg" style="height: 260px;">
+ 				<div class="card-body">
+ 					<h4 class="card-title">Identity X</h4>
+ 					<button class="btn btn-outline-secondary" data-toggle="collapse" data-target="#moreinfo1">More Info</button>
+ 					<div id="moreinfo1" class="collapse">	
+ 						<div class="orginfo" >Identity X is a UC Berkeley competitive dance team created in Fall 2013. 
+
+						</div>
+						<div class="orginfo" >
+							<p>Awards:</p> 
+							<p>Maxt Out 2015: Judges Award- Sickest Opener</p> 
+							<p>WODLA 2016: 2nd Place </p> 
+							<p>WODLA 2016: Best Costume </p> 
+							 
+						</div>
+					</div>
+ 				</div>
+			</div>
+		</div>
+		<div class="col-md-2">
+			<div class="card">
+ 				<img class="card-img-top card-pic" src="img/afx.png">
+ 				<div class="card-body">
+ 					<h4 class="card-title">AFX Dance</h4>
+ 					<button class="btn btn-outline-secondary" data-toggle="collapse" data-target="#moreinfo2">More Info</button>
+ 					<div id="moreinfo2" class="collapse">	
+ 						<div class="padding orginfo" >
+ 							AFX Dance is an urban dance group founded in Fall 2011 to give dancers an opportunity to grow. Our name, [A]spirations, [F]amily, e[X]perience reflects our philosophy of creating a family environment for dancers to build up the confidence and support to reach new heights. With Competition (competitive advanced), Project (intermediate-advanced), and Training (beginner) levels, we hope to provide dancers, choreographers, and directors with new, fulfilling experiences that will empower them to pass on our philosophies to the greater community.
+						</div>
+					</div>
+ 				</div>
+			</div>
+		</div>
+		<div class="col-md-2">
+			<div class="card">
+ 				<img class="card-img-top card-pic" src="https://d33wubrfki0l68.cloudfront.net/4e293aa9fee113cde2d7e0b5ec6cc7f5d64ce54d/8ba89/img/logo__icon.svg" style="height: 260px;">
+ 				<div class="card-body">
+ 					<h4 class="card-title">Innovative Design</h4>
+ 					<button class="btn btn-outline-secondary" data-toggle="collapse" data-target="#moreinfo3">More Info</button>
+ 					<div id="moreinfo3" class="collapse">	
+ 						<div class="padding orginfo" >Innovative Design is a family of graphic designers and photographers at the University of California, Berkeley. We are creative individuals who are continuously evolving by collaborating, inspiring and educating one another. It is through our different artistic tools and talents that we are able to create novel photography and designs for our peers and professional clients.
+						</div>
+					</div>
+ 				</div>
+			</div>
+		</div>
+		<div class="col-md-2">
+			<div class="card">
+ 				<img class="card-img-top card-pic" src="img/mdblogo.png">
+ 				<div class="card-body">
+ 					<h4 class="card-title">Mobile Developers of Berkeley</h4>
+ 					<button class="btn btn-outline-secondary" data-toggle="collapse" data-target="#moreinfo4">More Info</button>
+ 					<div id="moreinfo4" class="collapse">	
+ 						<div class="padding orginfo" >Mobile Developers of Berkeley (MDB) is a pre-incubator for mobile apps powered by a thriving community of developers. As UC Berkeley's first and foremost mobile-focused student organization, it brings together Cal's best engineers to build the next generation of software products. Over the past 2 years, MDB has launched over 27 mobile apps in industries such as education, health, social media, shared economy, music, and location based services. It has also built the core technology behind several businesses through its contract program, and brought the Berkeley community closer to the mobile industry through its open workshops and public events.
+						</div>
+					</div>
+ 				</div>
+			</div>
+		</div>
+		<div class="col-md-2">
+			<div class="card">
+ 				<img class="card-img-top card-pic" src="img/pasae.png">
+ 				<div class="card-body">
+ 					<h4 class="card-title">Pilipino Association of Engineers</h4>
+ 					<button class="btn btn-outline-secondary" data-toggle="collapse" data-target="#moreinfo5">More Info</button>
+ 					<div id="moreinfo5" class="collapse">	
+ 						<div class="padding orginfo" >Established in 1988, the Pilipino Association of Scientists, Architects, and Engineers (PASAE) serves as a close-knit support group for students in the technical fields, providing student members a space for social interaction, cultural understanding, professional guidance, and academic support. 
+
+						</div>
+					</div>
+ 				</div>
+			</div>
+		</div>
+		<div class="col-md-2">
+			<div class="card">
+ 				<img class="card-img-top card-pic" src="img/dtb.png">
+ 				<div class="card-body">
+ 					<h4 class="card-title">Dance the Bay</h4>
+ 					<button class="btn btn-outline-secondary" data-toggle="collapse" data-target="#moreinfo6">More Info</button>
+ 					<div id="moreinfo6" class="collapse">	
+ 						<div class="padding orginfo" >Dance the Bay seeks to uplift individuals and community through the medium of dance. Dance the Bay (DtB), formerly known as Everybody Dance Now! Berkeley, strives to make dance accessible for youth by providing dance at preschool and after school programs. We teach all genres of movement, emphasizing dance as an outlet for creativity and self-expression, and a means of learning discipline, cooperation, and confidence. We also perform and teach at senior homes and host community workshops on campus to share dance with everyone.
+
+
+
+						</div>
+					</div>
+ 				</div>
+			</div>
+		</div>
+	</div>
+
+</div>
+
+<!--- Fixed background -->
+<!-- <figure>
+	<div class="fixed-wrap">
+		<div id="fixed">
+		</div>
+	</div>
+</figure>
+ -->
+
+
+
+
+
+<!--- Connect -->
+<div class="container-fluid padding">
+	<div class="row text-center padding">
+		<div class="col-12">
+			<h2>Connect</h2>
+		</div>
+		<div class="col-12 social padding">
+			<a href="https://www.facebook.com/jared.gutierrez.10"><i class="fab fa-facebook"></i></a>
+			<a href="https://www.instagram.com/jared.gut/"><i class="fab fa-instagram"></i></a>
+			<a href="https://www.linkedin.com/in/jaredgutierrez/"><i class="fab fa-linkedin"></i></a>
+		</div>
+	</div>
+</div>
+
+
+<!--- Footer -->
+<footer>
+	<div class="container-fluid padding">
+		<div class="row text-center">
+			<div class="col-md-4">
+			</div>
+			<div class="col-md-4">
+				<hr class="light">
+				<h5>Contact Info</h5>
+				<hr class="light">
+				<p>(650)-200-8131</p>
+				<p>jaredgutierrez1997@gmail.com</p>
+				<p></p>
+				<p>San Francisco, CA 94080</p>
+			</div>
+		</div>
+	</div>
+
+</footer>
+
+
+
+</body>
+</html>
+
+
+
+
+
+
